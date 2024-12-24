@@ -1,62 +1,70 @@
-
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Pernikahan Putri & Asidiq</title>
+    <title>Undangan Pernikahan</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
         }
         .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        header {
+            background: #6a5acd;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
             padding: 20px;
+            text-align: center;
         }
-        h1 {
-            color: #6A5ACD;
+        .bride-groom {
+            margin-bottom: 20px;
         }
-        .guest-name {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #FF4500;
+        .date-location {
+            margin: 20px 0;
         }
-        .details {
-            margin-top: 20px;
-        }
-        .footer {
-            margin-top: 50px;
-            font-size: 0.8em;
-            color: #888;
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Undangan Pernikahan</h1>
-        <p>Dengan penuh kebahagiaan, kami mengundang:</p>
-        <div class="guest-name" id="guest-name">Tamu Undangan</div>
-        <div class="details">
-            <p>Putri & Asidiq</p>
-            <p>Sabtu, 27 Januari 2024</p>
-            <p>Lokasi: Gedung Harmoni, Jakarta</p>
-        </div>
-        <p>Merupakan kehormatan bagi kami apabila Anda berkenan hadir.</p>
+        <header>
+            <h1>Undangan Pernikahan</h1>
+        </header>
+        <section>
+            <p>Dengan penuh rasa syukur, kami mengundang Anda ke pernikahan kami:</p>
+            <div class="bride-groom">
+                <h2>Putri & Asidiq</h2>
+            </div>
+            <div class="date-location">
+                <p>Sabtu, 20 Januari 2024</p>
+                <p>Gedung ABC, Jalan Mawar No. 123, Jakarta</p>
+            </div>
+            <p>Merupakan kehormatan bagi kami apabila Anda dapat menghadiri acara kami.</p>
+        </section>
+        <footer>
+            <p>Terima kasih atas doa dan restunya.</p>
+        </footer>
     </div>
-    <div class="footer">
-        © 2024 Putri & Asidiq. All Rights Reserved.
-    </div>
-    <script>
-        // Mengambil parameter dari URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const guest = urlParams.get('to');
-        if (guest) {
-            document.getElementById('guest-name').innerText = guest.replace(/,/g, ' & ');
-        }
-    </script>
 </body>
 </html>
